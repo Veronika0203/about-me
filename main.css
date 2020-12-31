@@ -21,6 +21,9 @@ h1 {
 	top: -130px;
 
 }
+h2 {
+	font-size: 25px;
+}
 
 p {
   margin-top: 15px;
@@ -54,7 +57,7 @@ p {
 }
 
 .profile-image {
-  margin-top: 50px;
+  margin-top: 50%;
 	
 }
 
@@ -93,6 +96,16 @@ a {
 
 a:hover {
   color:black;
+}
+
+/*====BASE STYLE====*/
+
+p {
+	font-family: 'Lobster', cursive;
+}
+
+h1, h2 {
+	font-family: 'Redressed', cursive;
 }
 
 
