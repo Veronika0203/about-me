@@ -15,26 +15,27 @@ body {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 1.562rem;
 	border-style: double;
 	position: relative;
-	top: -130px;
+	top: -8.125rem;
 
 }
 h2 {
-	font-size: 25px;
+	font-size: 1.562rem;
 }
 
 p {
-  margin-top: 15px;
+  margin-top: 0.937rem;
   font-family: mv boli;
 }
+
 	.profile-card {
-  width: 300px;
-  max-width:calc(150vw - 15px);
+  width: 18.75rem;
+  max-width:calc(150vw - 0.937rem);
   background-color:antiquewhite;
-  border-radius: 15px;
-	margin-top: 250px;
+  border-radius: 0.937rem;
+	margin-top: 15.62rem;
 
 }
 
@@ -53,11 +54,12 @@ p {
 
 .content {
   padding: 5% 10%;
-  border-top: 1px solid hsla(0, 0%, 30%, .8);
+  border-top: 0.0625rem solid hsla(0, 0%, 30%, .8);
 }
 
 .profile-image {
   margin-top: 50%;
+ 
 	
 }
 
@@ -66,11 +68,11 @@ p {
 }
 
 img {
-  width: 120px;
-	height: 120px;
+  width: 7.5rem;
+	height: 7.5rem;
 	position: relative;
-	top: 40px;
-	padding: 10px;
+	top: 3.5rem;
+	padding: 0.0625rem;
   background-color: crimson;
   transition: all 0.5s ease-in-out;
   filter: grayscale(80);
@@ -91,13 +93,13 @@ li {
 
 a {
   color:silver;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 a:hover {
   color:black;
 }
-
+	
 /*====BASE STYLE====*/
 
 p {
@@ -107,6 +109,85 @@ p {
 h1, h2 {
 	font-family: 'Redressed', cursive;
 }
+
+ /* ==== LAYOUT STYLES ==== */
+
+h1, h2, p, ul, li, .profile-image,.name-headline, .about, .links, {
+  margin-bottom: 1rem;
+}
+
+  /* ==== PROFILE STYLE ==== */
+
+.profile-image {
+  text-align: center;
+	padding: 0.15rem;
+}
+/* ==== ABOUT STYLE ==== */
+
+.name-headline, .about, .links {
+  width: 95%;
+	margin: 0 auto 0.5rem;
+	padding: 0.20rem;
+}
+.picture {
+	width: 100%;
+}
+
+/* ==== Médiabeállítások  ==== */
+
+@media (max-width: 320px) {
+
+    .profile-card {
+      width: 18.5rem;
+      height: 44.5rem;
+  }
+
+    .profile-image {
+      height: 50%;
+  }
+
+    .name-headline {
+      height: 45%;
+      padding: 0.625rem;
+  }
+
+    .content {
+      height: 55%;
+  }
+}
+	
+@media (min-width: 768px) {
+
+  .profile-card {
+    position: absolute;
+    width: 28.5rem;
+    height: 60.5rem ;
+  }
+
+  .name-headline {
+    position: relative;
+    width: 75%;
+    height: 100%;
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+  }
+
+  .profile-image {
+		position: relative;
+		width: 100%;
+    height: 100%;
+		right: auto;
+  }
+
+  .content {
+    position: relative;
+    width: 80%;
+    height: 100%;
+  }
+
+}
+
+
 
 
 
